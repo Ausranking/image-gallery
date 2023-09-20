@@ -1,5 +1,5 @@
 import cam from "./camera.png";
-import jojo from "./jojo.png";
+import jojo from "./Jojo.png";
 import Deep from "./Deep purple.png";
 import laptop from "./Laptop.png";
 import multi from "./Multi-Screen.png";
