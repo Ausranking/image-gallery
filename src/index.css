@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth dark:bg-slate-900 dark:text-white
+  }
+
+  form {
+    @apply flex flex-col m-auto shadow-2xl justify-center items-center h-80 p-4
+  }
+
+}
+
+@layer components {
+  input {
+    @apply p-2 ring-1 ring-emerald-500 mt-2 rounded-md w-80 outline-none dark:text-black
+  }
+
+  img {
+    @apply object-cover rounded-xl p-2
+  }
+
+  .draggable-image p {
+    @apply text-emerald-500 font-semibold px-2 text-sm
+  }
+
+  .dragging {
+    position: relative;
+    z-index: 1000;
+  }
+  #logout-btn{
+    @apply bg-red-500 hover:bg-red-400
+  }
+  
+}
