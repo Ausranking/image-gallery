@@ -61,6 +61,13 @@ const Login = () => {
         <LoadingSpinner />
       ) : (
         <div className=" flex flex-col justify-center items-center w-screen h-screen">
+          <div className=" absolute ">
+            <img
+              src={splashpro}
+              alt="hero-img"
+              className="object-cover w-screen h-screen opacity-70 z-0"
+            />
+          </div>
           {signUp ? (
             <form onSubmit={handleLogin}>
               {error && <p className="text-red-500">{error}</p>}
