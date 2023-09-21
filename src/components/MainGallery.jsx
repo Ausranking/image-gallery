@@ -14,14 +14,18 @@ const MainGallery = ({ images }) => {
   const [noMatch, setNoMatch] = useState(false);
 
   const handleLogout = async () => {
-    try {
-      await auth.signOut();
-      navigate("/");
-    } catch (error) {
-      console.log(error);
-    }
+    setLoading(true);
+    setTimeout(async () => {
+      try {
+        await auth.signOut();
+        setLoading(false);
+        navigate("/");
+      } catch (error) {
+        console.log(error.message);
+        setLoading(false);
+      }
+    }, 1500);
   };
-
   // Handle drag events
   const handleDrag = (e, ui, index) => {
     // Implement any logic you need for handling the drag event
