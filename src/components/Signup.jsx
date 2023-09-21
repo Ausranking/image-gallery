@@ -24,25 +24,25 @@ const Signup = ({ signup }) => {
   };
 
   return (
-    <div>
+    <div className="z-10">
       {error && <p className="text-red-500">{error}</p>}
       <form onSubmit={handleSignup}>
         {error && <p className="text-red-500">{error}</p>}
         <h1 className="text-center  text-3xl font-bold"> Register </h1>
-        <input
-          type="email"
-          placeholder="Input email"
-          onChange={(e) => setEmail(e.target.value)}
-          value={email}
-        />
+          <input
+            type="email"
+            placeholder="Input email"
+            onChange={(e) => setEmail(e.target.value)}
+            value={email}
+          />
+          <input
+            type="password"
+            placeholder="Input password"
+            onChange={(e) => setPassword(e.target.value)}
+            value={password}
+          />
+          <Button text={"Sign Up"} />
 
-        <input
-          type="password"
-          placeholder="Input password"
-          onChange={(e) => setPassword(e.target.value)}
-          value={password}
-        />
-        <Button text={"Sign Up"} />
         <p className="text-center my-2">OR</p>
         <div className="flex space-x-5 justify-evenly mt-2 cursor-pointer ">
           <FcGoogle size={30} />

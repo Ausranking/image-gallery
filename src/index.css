@@ -8,7 +8,7 @@
   }
 
   form {
-    @apply flex flex-col m-auto shadow-2xl justify-center items-center h-80 p-4
+    @apply flex flex-col m-auto shadow-2xl justify-center items-center h-80 p-4 z-10
   }
 
 }

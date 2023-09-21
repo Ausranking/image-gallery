@@ -5,6 +5,7 @@ import { useState } from "react";
 import { auth } from "../firebase";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import LoadingSpinner from "./LoadingSpinner";
+import { splashpro } from "../images";
 
 import { useNavigate } from "react-router-dom";
 

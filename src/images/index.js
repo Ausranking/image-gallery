@@ -65,4 +65,4 @@ const images = [
     tag: "Colme",
   },
 ];
-export { images ,jojo,cam};
+export {splashpro, images ,jojo,cam};
