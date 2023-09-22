@@ -26,11 +26,10 @@ const DraggableImage = ({ image }) => {
         >
           <div
             ref={imageRef}
-            className="w-[24rem] h-[14rem] shadow-2xl bg-white"
+            className="w-[24rem]  max-sm:w-fit  h-[14rem] shadow-2xl bg-white"
           >
             <img src={image.url} alt={image.title} tag={image.tag} />
             <p>{image.title}</p>
-            {/* <p>{image.tag}</p> */}
           </div>
         </Draggable>
       </div>

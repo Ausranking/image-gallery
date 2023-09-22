@@ -72,7 +72,7 @@ const MainGallery = ({ images }) => {
               <p className="text-red-500 ">No Image Found</p>
             </div>
           ) : (
-            <div className="grid  lg:grid-cols-3 gap-2 place-content-center">
+            <div className="grid md:grid-cols-2 md:gap-8 lg:grid-cols-3 gap-2 place-content-center">
               {imagesData.map((image, index) => (
                 <DraggableImage
                   key={image.id}
